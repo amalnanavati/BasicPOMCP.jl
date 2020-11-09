@@ -1,5 +1,6 @@
 function action_info(p::POMCPPlanner, b; tree_in_info=false)
     local a::actiontype(p.problem)
+    @printf "Test"
     info = Dict{Symbol, Any}()
     try
         tree = POMCPTree(p.problem, b, p.solver.tree_queries)
